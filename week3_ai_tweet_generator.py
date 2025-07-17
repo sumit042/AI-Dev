@@ -2,8 +2,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
 from flask import Flask, request, jsonify
 
-# Load once globally — slow only once
-print("Loading GPT-2 model...")
+print("loading")
 
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 model = GPT2LMHeadModel.from_pretrained('gpt2')
